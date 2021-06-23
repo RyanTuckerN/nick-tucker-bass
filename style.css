@@ -1,0 +1,213 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+/* .bgimg-1, */
+.bgimg-2,
+.bgimg-3,
+.bgimg-4 {
+  position: relative;
+  opacity: 0.85;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("assets/background.png");
+  min-height: 100vh;
+  position: relative;
+  opacity: 0.85;
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-2 {
+  background-image: url("assets/Bassphoto.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("assets/richBackStage.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("assets/background.png");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.bord {
+  background-color: #2b2727ad;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  max-width: 90%;
+}
+
+#small-subhead {
+  display: none;
+}
+
+.bord {
+  background-color: rgba(17, 17, 17, 0.295);
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  max-width: 90%;
+  text-align: center;
+}
+
+p {
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+  /* padding: 25px; */
+}
+
+#bio,
+#contact {
+  color: #777;
+  background-color: white;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+#listen {
+  color: #ddd;
+  background-color: #282e34;
+  text-align: center;
+  /* padding:50px 80px; */
+  text-align: justify;
+}
+
+#bandcamp {
+  margin-right: 15%;
+  margin-left: 15%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#dates {
+  color: #ddd;
+  background-color: #282e34;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+iframe {
+  border: 0;
+  width: 472px;
+  height: 472px;
+  padding: 5%;
+  max-width: 98%;
+}
+
+#footer {
+  background-color: rgb(231, 230, 230);
+}
+
+#dev-links {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.social-links {
+  height: 30px;
+  width: 30px;
+  opacity: 0.6;
+}
+.navbar {
+  background-color: #2b2727ad;
+  opacity: 0.65;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 700px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3,
+  .bgimg-4 {
+    background-attachment: scroll;
+    background-position: left 0px top 0px;
+    background-color: #282e34;
+  }
+  #bio,
+  #contact {
+    max-width: 100vh;
+    padding: 5px;
+  }
+
+  p {
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: justify;
+  }
+  #footer p {
+    text-align: center;
+  }
+  #subhead {
+    display: none;
+  }
+  #small-subhead {
+    margin: auto;
+    width: 50%;
+    display: block;
+    padding: 0px;
+  }
+  #small-subhead p {
+    text-align: center;
+    font-size: 16px;
+  }
+  #dates {
+    padding: 50px 5px;
+  }
+
+  #dates p {
+    text-align: center;
+  }
+
+  .caption {
+    top: 20%;
+  }
+}
+
+#contact-form{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea{
+  height: 150px;
+}
